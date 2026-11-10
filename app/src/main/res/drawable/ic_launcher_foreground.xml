@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Keyboard & AI Mic Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,32h60c4.4,0 8,3.6 8,8v28c0,4.4 -3.6,8 -8,8H24c-4.4,0 -8,-3.6 -8,-8V40c0,-4.4 3.6,-8 8,-8zm8,12h8v8h-8zm16,0h8v8h-8zm16,0h8v8h-8zm-32,16h48v8H32z" />
+</vector>

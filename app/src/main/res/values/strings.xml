@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Flow AI Keyboard</string>
+    <string name="subtype_hi_en">Flow AI (Hindi to English)</string>
+    <string name="enable_keyboard_title">1. Enable Keyboard</string>
+    <string name="enable_keyboard_desc">Enable Flow AI Keyboard in your Android Language &amp; Input settings.</string>
+    <string name="select_keyboard_title">2. Select as Active Keyboard</string>
+    <string name="select_keyboard_desc">Choose Flow AI Keyboard as your default typing method.</string>
+    <string name="api_key_title">3. Gemini AI Configuration</string>
+    <string name="api_key_desc">Enter your Google Gemini API Key for instant Hindi voice/text translation and grammar correction.</string>
+    <string name="test_title">4. Live Test Area</string>
+    <string name="test_desc">Tap the box below to open the keyboard and test Hindi voice/text translation!</string>
+    <string name="test_hint">Tap here to test typing or voice...</string>
+    <string name="btn_enable">Enable in Settings</string>
+    <string name="btn_select">Select Keyboard</string>
+    <string name="btn_save_key">Save API Key</string>
+    <string name="gemini_api_key_hint">Enter Gemini API Key (AIzaSy...)</string>
+    <string name="voice_listening">Listening to Hindi... Speak now!</string>
+    <string name="voice_translating">Translating &amp; polishing with AI...</string>
+</resources>

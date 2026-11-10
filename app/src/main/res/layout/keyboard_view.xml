@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_bg"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <!-- Top AI Assistant Toolbar -->
+    <LinearLayout
+        android:id="@+id/ai_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_toolbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp">
+
+        <!-- Voice Speech-to-English Mic Button -->
+        <FrameLayout
+            android:id="@+id/btn_voice_mic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_mic_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="Voice Input"
+                android:src="@drawable/ic_mic" />
+        </FrameLayout>
+
+        <!-- AI Status Indicator / Hint Banner -->
+        <TextView
+            android:id="@+id/tv_ai_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Tap mic to speak Hindi ➔ English"
+            android:textColor="@color/key_text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Quick Translate Button (HI -> EN) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_quick_translate"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:paddingHorizontal="8dp"
+            android:text="Translate"
+            android:textAllCaps="false"
+            android:textColor="@color/accent_ai"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_translate"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="@color/accent_ai" />
+
+        <!-- AI Polish / Grammar Fix Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ai_polish"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:paddingHorizontal="8dp"
+            android:text="Polish"
+            android:textAllCaps="false"
+            android:textColor="#F59E0B"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_magic"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="#F59E0B" />
+
+        <!-- Settings Button -->
+        <ImageView
+            android:id="@+id/btn_settings"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Settings"
+            android:padding="6dp"
+            android:src="@drawable/ic_settings" />
+    </LinearLayout>
+
+    <!-- Key Rows Container -->
+    <LinearLayout
+        android:id="@+id/keys_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="3dp"
+        android:paddingTop="4dp">
+
+        <!-- Row 1: Q W E R T Y U I O P -->
+        <LinearLayout
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="10" />
+
+        <!-- Row 2: A S D F G H J K L -->
+        <LinearLayout
+            android:id="@+id/row_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="9" />
+
+        <!-- Row 3: Shift, Z X C V B N M, Backspace -->
+        <LinearLayout
+            android:id="@+id/row_3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <!-- Row 4: ?123, Comma, Space, Dot, Enter -->
+        <LinearLayout
+            android:id="@+id/row_4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

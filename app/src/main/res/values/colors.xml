@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="accent_ai">#8B5CF6</color>
+    <color name="accent_mic_recording">#EF4444</color>
+    <color name="accent_success">#10B981</color>
+    
+    <!-- Keyboard Palette -->
+    <color name="keyboard_bg">#1E1E2E</color>
+    <color name="toolbar_bg">#181825</color>
+    <color name="key_bg">#313244</color>
+    <color name="key_pressed">#45475A</color>
+    <color name="key_action_bg">#45475A</color>
+    <color name="key_text">#CDD6F4</color>
+    <color name="key_text_secondary">#A6ADC8</color>
+    <color name="key_border">#313244</color>
+    
+    <!-- App UI Palette -->
+    <color name="app_bg">#0F172A</color>
+    <color name="card_bg">#1E293B</color>
+    <color name="text_title">#F8FAFC</color>
+    <color name="text_subtitle">#94A3B8</color>
+</resources>
